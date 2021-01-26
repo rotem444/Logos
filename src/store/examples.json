@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    },
+    {
+      "premises": ["P", "P⇒Q"],
+      "conclusion": "Q",
+      "isCompleted": false
+    }
+  ]
+]

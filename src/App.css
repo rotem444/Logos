@@ -1,38 +1,43 @@
-.App {
+.myNav {
+  background-image: url("./image/mybuck2.jpg");
+}
+
+body {
+  background-image: url("./image/go22.jpg");
+}
+
+.myButton {
+  background-image: url("./image/mybuck2.jpg");
+  border: 0.1em solid black;
+  box-sizing: border-box;
+  margin: 0.1em;
+  margin-bottom: 0.3em;
+  border-radius: 0.5em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myButton:hover {
+  cursor: pointer;
+  border: 0.3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line {
+  background-image: url("./image/mybuck2.jpg");
+  border: 0.05em solid black;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  height: 3em;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line:hover {
+  border: 0.1em solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.line .myIcon {
+  visibility: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line:hover .myIcon {
+  visibility: visible;
 }

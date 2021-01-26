@@ -1,0 +1,50 @@
+{
+  "I∧": {
+    "schema": "δ, φ ⊢ δ∧φ",
+    "info": "marked 2 propositional from the last block and insert the '∧' connective bitwin them"
+  },
+  "E∧": {
+    "schema": "δ∧φ ⊢ δ, φ",
+    "info": "marked 1 propositional from the last block thet her main connective is '∧'. after the rule Will be activated you will ascked if you whant to pull the rigth or the left side of the propositional thet you marked"
+  },
+  "I∨": {
+    "schema": "δ ⊢ δ∨φ",
+    "info": "marked 1 propositional from the last block, after the rule Will be activated a virtual keyboart will be open and you will required to type some propositional (mast be a well formed formula), after you click on the 'Add' button a new line will created whit the propositional thet you marked and the propositional thet you type whit '∨' conective bitwin them"
+  },
+  "E∨": {
+    "schema": "δ∨φ, δ⇒ψ, φ⇒ψ ⊢ ψ",
+    "info": "marked 3 propositional, 1 whit main connective '∨' and 2 whit main connective '⇒'. the sifa of the '∨' propositionals need to be same and the risha need to be same to boat side of the 'V' propositional, after the rule will actided the new line will be the '⇒' sifa"
+  },
+  "I⇒": {
+    "schema": "δ...φ ⊢ δ⇒φ",
+    "info": "marked 2 propositionals. 1 whit main connective '⇒' and the other same to her risha, the new line will be the sifa of the '⇒' propositional"
+  },
+  "E⇒": {
+    "schema": "δ, δ⇒φ ⊢ φ",
+    "info": "o"
+  },
+  "I⇔": {
+    "schema": "δ⇒φ, φ⇒δ ⊢ δ⇔φ",
+    "info": "o"
+  },
+  "E⇔": {
+    "schema": "δ⇔φ ⊢ δ⇒φ, φ⇒δ",
+    "info": "o"
+  },
+  "I¬": {
+    "schema": "δ...φ¬∧φ ⊢ δ¬",
+    "info": "o"
+  },
+  "E¬": {
+    "schema": "δ¬¬ ⊢ δ",
+    "info": "o"
+  },
+  "Hyp": {
+    "schema": " ⊢ δ",
+    "info": "o"
+  },
+  "Rep": {
+    "schema": "δ ⊢ δ",
+    "info": "o"
+  }
+}

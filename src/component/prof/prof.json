@@ -1,0 +1,84 @@
+{
+  "I∧": {
+    "schema": "A, B ⊢ A∧B",
+    "info": "marked 2 propositional from the last block and insert the '∧' connective bitwin them",
+    "marked": 2,
+    "mainConnectiv": [],
+    "pattern": "^(\\(.+\\)|[A-Z]¬*), ((\\(.+\\))|[A-Z]¬*)$",
+    "replacement": "[$1]∧[$2]"
+  },
+  "E∧": {
+    "schema": "A∧B ⊢ A, B",
+    "info": "marked 1 propositional from the last block thet her main connective is '∧'. after the rule Will be activated you will ascked if you whant to pull the rigth or the left side of the propositional thet you marked",
+    "marked": 1,
+    "mainConnectiv": ["∧"],
+    "pattern": "^(\\(.+\\)¬*|[A-Z]¬*)∧(\\(.+\\)¬*|[A-Z]¬*)$",
+    "replacement": "[$1],[$2]"
+  },
+  "I∨": {
+    "schema": "A ⊢ A∨B",
+    "info": "marked 1 propositional from the last block, after the rule Will be activated a virtual keyboart will be open and you will required to type some propositional (mast be a well formed formula), after you click on the 'Add' button a new line will created whit the propositional thet you marked and the propositional thet you type whit '∨' conective bitwin them",
+    "marked": 1,
+    "mainConnectiv": [],
+    "pattern": "^.+$",
+    "replacement": "[$&]∨@"
+  },
+  "E∨": {
+    "schema": "AVB, A⇒C, B⇒C ⊢ C",
+    "info": "marked 3 propositional, 1 whit main connective '∨' and 2 whit main connective '⇒'. the sifa of the '∨' propositionals need to be same and the risha need to be same to boat side of the 'V' propositional, after the rule will actided the new line will be the '⇒' sifa",
+    "marked": 3,
+    "mainConnectiv": ["V", "⇒", "⇒"],
+    "pattern": "^((\\(.+\\)|[A-Z])¬)V((\\(.+\\)|[A-Z])¬), ((\\1⇒((\\(.+\\)|[A-Z])¬), \\2⇒\\3)|(\\2⇒((\\(.+\\)|[A-Z])¬), \\1⇒\\3))$"
+  },
+  "I⇒": {
+    "schema": "A, A⇒B ⊢ B",
+    "info": "marked 2 propositionals. 1 whit main connective '⇒' and the other same to her risha, the new line will be the sifa of the '⇒' propositional",
+    "marked": 2,
+    "mainConnectiv": ["⇒"]
+  },
+  "E⇒": {
+    "schema": "A...B ⊢ A⇒B",
+    "marked": 2,
+    "mainConnectiv": []
+  },
+  "I⇔": {
+    "schema": "A⇒B, B⇒A ⊢ A⇔B",
+    "marked": 2,
+    "mainConnectiv": ["⇒", "⇒"]
+  },
+  "E⇔": {
+    "schema": "A⇔B ⊢ A⇒B, B⇒A",
+    "marked": 1,
+    "mainConnectiv": ["⇔"],
+    "pattern": "^(.+)⇔(.+$)",
+    "replacement": "$1⇒$2,$2⇒$1"
+  },
+  "I¬": {
+    "schema": "A...B¬∧B ⊢ A¬",
+    "marked": 1,
+    "mainConnectiv": ["∧"],
+    "pattern": "^(.+), (.+)¬∧\\2",
+    "replacement": "$1¬"
+  },
+  "E¬": {
+    "schema": "A¬¬ ⊢ A",
+    "marked": 1,
+    "mainConnectiv": ["¬"],
+    "pattern": "^(.+)¬¬$",
+    "replacement": "[$1]"
+  },
+  "Hyp": {
+    "schema": "⊢ A",
+    "marked": 0,
+    "mainConnectiv": [],
+    "pattern": "^$",
+    "replacement": "@"
+  },
+  "Rep": {
+    "schema": "A ⊢ A",
+    "marked": 1,
+    "mainConnectiv": [],
+    "pattern": ".+",
+    "replacement": "$&"
+  }
+}
